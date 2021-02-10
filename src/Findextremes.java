@@ -23,7 +23,7 @@ public class Findextremes {
      * @return math for first derivative of Y with current x and y
      */
     private double firstDerivativeY(){
-        return (-this.x - 12 * (Math.pow(this.y, 5)));
+        return ((12 * (Math.pow(this.y, 5))) - this.x);
     }
 
     /**
@@ -55,6 +55,17 @@ public class Findextremes {
         this.x = x;
         return (this.y - (firstDerivativeY() / secondDerivativeY()));
     }
+
+    /**
+     *
+     * @param x last found Xn where max or min found
+     * @param y last found Yn where max or min found
+     * @return the Z for the the Xn an Yn using equation given
+     */
+    public double getZ(double x, double y){
+        return (Math.pow(x, 4)+ (2 * Math.pow(y, 6)) - (x * y) - x + 2);
+    }
+
     /*
     (5 pts) Apply the Newton-Raphson's method xn+1 = xn – f '(xn) / f ''(xn) to develop a function double findMinMax(…)
     that returns a solution that is either a minimum value or a maximum value for z.
