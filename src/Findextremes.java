@@ -1,3 +1,9 @@
+/**
+ * formula to find min and max
+ * @author Cody Walker,
+ * @version 1.0
+ */
+
 public class Findextremes {
     double x;
     double y;
