@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.Random;
 
 /**
- * @author Cody Walker,
+ * @author Cody Walker, Mio Diaz
  * @version 1.0
  */
 public class Main {
