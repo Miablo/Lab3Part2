@@ -1,6 +1,10 @@
 import java.util.ArrayList;
 import java.util.Random;
 
+/**
+ * @author Cody Walker,
+ * @version 1.0
+ */
 public class Main {
 
     static Random rand = new Random();
